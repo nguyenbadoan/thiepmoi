@@ -1,0 +1,52 @@
+{
+  "couple": {
+    "groom": "Bá Lãm",
+    "bride": "Thu Phương",
+    "groomFullName": "Nguyễn Bá Lãm",
+    "brideFullName": "Nguyễn Thị Thu Phương"
+  },
+  "families": {
+    "groomParents": "Ông Nguyễn Bá Thủy \n Bà Vũ Thị Quyết",
+    "brideParents": "Ông Nguyễn Văn Thuận \n Bà Tống Thị Tròn",
+    "groomAddress": "Tổ dân phố Tống Vũ \n Phường Trần Lãm, Hưng Yên",
+    "brideAddress": "Tổ dân phố Vũ Chính \n Phường Trần Lãm, Hưng Yên"
+  },
+  "wedding": {
+    "dateISO": "2026-11-28",
+    "dateDisplay": "29 · 11 · 2026",
+    "dateShort": "29 tháng 11, 2026",
+    "dayOfWeek": "CHỦ NHẬT",
+    "day": "29",
+    "monthLabel": "THÁNG 11",
+    "year": 2026,
+    "lunarDate": "(TỨC NGÀY 21 THÁNG 10 NĂM BÍNH NGỌ)",
+    "ceremonyTime": "11:00",
+    "receptionTime": "16:00",
+    "dayOfWeekRecept": "THỨ BẢY",
+    "dayRecept": "28",
+    "monthLabelRecept": "THÁNG 11",
+    "lunarDateRecept": "(TỨC NGÀY 20 THÁNG 11 NĂM BÍNH NGỌ)",
+    "guestArrivalTime": "16:00"
+  },
+  "venue": {
+      "name": "Tổ dân phố Tống Vũ",
+      "address": "Phường Trần Lãm, Hưng Yên",
+      "mapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d233.6851116195183!2d106.353892900481!3d20.425653724608484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1795094991163!5m2!1svi!2s"
+  },
+  "links": {
+    "rsvpUrl": "",
+    "calendarUrl": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Le%20cuoi&dates=20260103T103000/20260103T140000"
+  },
+  "images": {
+    "couplePhoto": "assets/Anh_cuoi/anh_cuoi_1.jpg",
+    "branch": "assets/branch.png",
+    "Khung_anh_cuoi": "assets/Khung_nen/Khung_anh_cuoi.png",
+    "Hop_qua": "assets/Khung_nen/Hop_qua.png"
+  },
+  "texts": {
+    "coverInvitationLine": "Thân mời bạn đến chung vui",
+    "ceremonyIntro": "Trân trọng báo tin\nlễ thành hôn của con chúng tôi",
+    "ceremonyLocationLine": "Lễ thành hôn được cử hành tại gia đình nhà trai\nvào lúc",
+    "receptionLead": "Tiệc cưới sẽ diễn ra vào lúc:"
+  }
+}
