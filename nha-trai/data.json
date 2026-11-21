@@ -38,10 +38,10 @@
     "calendarUrl": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Le%20cuoi&dates=20260103T103000/20260103T140000"
   },
   "images": {
-    "couplePhoto": "assets/Anh_cuoi/anh_cuoi_1.jpg",
-    "branch": "assets/branch.png",
-    "Khung_anh_cuoi": "assets/Khung_nen/Khung_anh_cuoi.png",
-    "Hop_qua": "assets/Khung_nen/Hop_qua.png"
+    "couplePhoto": "../assets/Anh_cuoi/anh_cuoi_1.jpg",
+    "branch": "../assets/branch.png",
+    "Khung_anh_cuoi": "../assets/Khung_nen/Khung_anh_cuoi.png",
+    "Hop_qua": "../assets/Khung_nen/Hop_qua.png"
   },
   "texts": {
     "coverInvitationLine": "Thân mời bạn đến chung vui",

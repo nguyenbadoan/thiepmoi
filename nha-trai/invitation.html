@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#f4eee6" />
+        <title data-config="pageTitle"></title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body class="wedding-page">
+        <div class="leaf-layer" id="leafLayer" aria-hidden="true"></div>
+        <main class="wedding-site">
+            <header class="wedding-hero" id="top">
+                <div class="hero-botanical botanical-left"></div>
+                <div class="hero-botanical botanical-right"></div>
+                <p class="hero-kicker">THE WEDDING OF</p>
+                <h1 class="hero-names">
+                  <span data-config="groom"></span>
+                  <span style="font-family: UTM ViceroyJF">&</span>
+                  <span data-config="bride"></span>
+                </h1>
+                <div class="polaroid">
+                    <img class="couple-photo"
+                        data-config-src="couplePhoto"
+                        alt="Ảnh cưới"/>
+                    <img class="polaroid-frame"
+                        data-config-src="Khung_anh_cuoi"
+                        alt=""/>
+                </div>
+                <p class="hero-date" data-config="dateDisplay"></p>
+            </header>
+
+            <section class="wedding-section reception-section" id="reception">
+                <div class="section-paper reception-paper" style="position: relative;">
+                    <div class="branch-tieccuoi-top">
+                        <img class="section-branch" src="../assets/branch/2traitim.png" alt="" />
+                    </div>
+                    <h2>Thông tin tiệc cưới</h2>
+                    <p class="section-lead" data-config="receptionLead"></p>
+                    <p class="large-time" data-config="receptionTime"></p>
+                    <div class="date-line">
+                        <span data-config="dayOfWeekRecept"></span><b data-config="dayRecept"></b><span data-config="monthLabelRecept"></span>
+                    </div>
+                    <p class="year" data-config="year"></p>
+                    <p class="lunar-date" data-config="lunarDateRecept"></p>
+                    <div class="party-times">
+                    </div>
+                    <div class="calendar-card">
+                        <p class="calendar-title" id="calendarTitle"></p>
+
+                        <div class="calendar-grid calendar-week">
+                            <span>T2</span>
+                            <span>T3</span>
+                            <span>T4</span>
+                            <span>T5</span>
+                            <span>T6</span>
+                            <span>T7</span>
+                            <span>CN</span>
+                        </div>
+
+                        <div class="calendar-grid calendar-days" id="calendarDays"></div>
+                    </div>
+                    <div class="branch-tieccuoi">
+                        <img class="section-branch" src="../assets/branch/hoahong.png" alt="" />
+                    </div>
+                </div>
+            </section>
+
+            <section class="album-section" id="album">
+                <h2 class="album-title">ALBUM ẢNH</h2>
+                <div class="album-carousel">
+                    <div class="album-track" id="albumTrack"></div>
+                </div>
+
+                <div class="album-counter">
+                    <span id="albumCurrent"></span> /
+                    <span id="albumTotal"></span>
+                </div>
+                <div class="album-controls">
+                    <button type="button" id="albumPrev">‹</button>
+                    <button type="button" id="albumNext">›</button>
+                </div>
+            </section>
+
+            <section class="wedding-section ceremony-section" id="ceremony">
+                <div class="section-paper">
+                    <div class="branch-lecuoi-top">
+                        <img class="section-branch" src="../assets/branch/no.png" alt="" />
+                    </div>
+
+                    <h2 style="margin-top: 20px;">Thông tin lễ cưới</h2>
+                    <div class="parents-row">
+                        <div>
+                            <small>Nhà Trai</small>
+                            <strong data-config="groomParents" style="white-space: pre-line;"></strong>
+                            <small data-config="groomAddress" style="white-space: pre-line;"></small>
+                        </div>
+                        <div>
+                            <small>Nhà Gái</small><strong data-config="brideParents" style="white-space: pre-line;"></strong>
+                            <small data-config="brideAddress" style="white-space: pre-line;"></small>
+                        </div>
+                    </div>
+                    <p class="ceremony-intro" style="white-space: pre-line;" data-config="ceremonyIntro"></p>
+                    <h3 class="person-name" data-config="groomFullName"></h3>
+                        <div class="ampersand">&</div>
+                    <h3 class="person-name" data-config="brideFullName"></h3>
+                    <p class="ceremony-copy" style="white-space: pre-line;" data-config="ceremonyLocationLine"></p>
+                    <p class="large-time" data-config="ceremonyTime"></p>
+                    <div class="date-line"><span data-config="dayOfWeek"></span><b data-config="day"></b><span data-config="monthLabel"></span></div>
+                    <p class="year" data-config="year"></p>
+                    <p class="lunar-date" data-config="lunarDate"></p>
+
+                    <div class="branch-lecuoi">
+                        <img class="section-branch" src="../assets/branch/hoahong.png" alt="" />
+                    </div>
+                </div>
+            </section>
+
+            <section class="wedding-section location-section" id="location">
+                <div class="location-content">
+                    <h2>Tiệc cưới sẽ tổ chức tại</h2>
+                    <h3 data-config="venueName"></h3>
+                    <p style="white-space: pre-line;" data-config="venueAddress"></p>
+                      <div class="map-container">
+                        <iframe
+                            id="weddingMap"
+                            src=""
+                            allowfullscreen
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin">
+                        </iframe>
+                      </div>
+                    <a class="direction-link"
+                        href="https://www.google.com/maps?ll=20.425654,106.353893&z=20&t=m&hl=vi&gl=US&mapclient=embed"
+                        target="_blank"
+                        rel="noopener"
+                        >↗ Chỉ đường</a
+                    >
+                </div>
+            </section>
+
+            <section class="gift-section">
+                <h2 class="gift-title">HỘP QUÀ MỪNG</h2>
+                <p style="margin: 0;">(Nhấn để mở)</p>
+
+                <button class="gift-box" id="openGiftModal" aria-label="Mở hộp quà mừng">
+                    <span class="gift-shadow"></span>
+                    <img class="gift-big" data-config-src="Hop_qua" alt="Hộp quà mừng">
+                    <img class="gift-small gift-1" src="../assets/Khung_nen/Hop_qua_1.png" alt="">
+                    <img class="gift-small gift-2" src="../assets/Khung_nen/Hop_qua_2.png" alt="">
+                    <img class="gift-small gift-3" src="../assets/Khung_nen/Hop_qua_3.png" alt="">
+                    <img class="gift-small gift-4" src="../assets/Khung_nen/Hop_qua_4.png" alt="">
+                    <img class="gift-small gift-5" src="../assets/Khung_nen/Hop_qua_5.png" alt="">
+                    <img class="gift-small gift-6" src="../assets/Khung_nen/Hop_qua_6.png" alt="">
+                    <img class="gift-small gift-7" src="../assets/Khung_nen/Hop_qua_7.png" alt="">
+                </button>
+                <div class="gift-modal" id="giftModal">
+                    <div class="gift-modal-content">
+                        <div class="gift-modal-header">
+                            <h2>HỘP QUÀ MỪNG</h2>
+                            <button class="close-gift-modal" id="closeGiftModal">&times;</button>
+                        </div>
+
+                        <div class="gift-modal-body">
+
+                            <!-- Chú rể -->
+                            <div class="gift-person">
+                                <p class="gift-person-name">
+                                    Chú Rể - <strong data-config="groomFullName"></strong>
+                                </p>
+
+                                <div class="qr-image">
+                                    <img src="../assets/qr-groom.jpg" alt="QR chú rể">
+                                </div>
+
+                                <div class="bank-info">
+                                    <span data-config="groomBank"></span>
+                                    <span data-config="groomAccount"></span>
+                                    <strong data-config="groomAccountName"></strong>
+                                </div>
+
+                                <a href="../assets/qr-groom.jpg"
+                                download="QR-Chu-Re.jpg"
+                                class="download-qr">
+                                    ♧ Lưu QR
+                                </a>
+                            </div>
+
+                            <!-- Cô dâu -->
+                            <div class="gift-person">
+                                <p class="gift-person-name">
+                                    Cô Dâu - <strong data-config="brideFullName"></strong>
+                                </p>
+
+                                <div class="qr-image">
+                                    <img src="../assets/qr-bride.jpg" alt="QR cô dâu">
+                                </div>
+
+                                <div class="bank-info">
+                                    <span data-config="brideBank"></span>
+                                    <span data-config="brideAccount"></span>
+                                    <strong data-config="brideAccountName"></strong>
+                                </div>
+
+                                <a href="../assets/qr-bride.jpg"
+                                download="QR-Co-Dau.jpg"
+                                class="download-qr">
+                                    ♧ Lưu QR
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="wedding-footer">
+                <p>Sự hiện diện của Qúy vị là niềm vinh hạnh cho gia đình chúng tôi !</p>
+                <a href="index.html">← Quay lại trang thiệp mời</a>
+            </footer>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

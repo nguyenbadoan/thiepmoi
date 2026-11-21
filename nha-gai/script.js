@@ -3,11 +3,11 @@
 //----------------------------------//
 
 const albumImages = [
-    "assets/Anh_cuoi/anh_cuoi_1.jpg",
-    "assets/Anh_cuoi/anh_cuoi_2.jpg",
-    "assets/Anh_cuoi/anh_cuoi_3.jpg",
-    "assets/Anh_cuoi/anh_cuoi_4.jpg",
-    "assets/Anh_cuoi/anh_cuoi_5.jpg",
+    "../assets/Anh_cuoi/anh_cuoi_1.jpg",
+    "../assets/Anh_cuoi/anh_cuoi_2.jpg",
+    "../assets/Anh_cuoi/anh_cuoi_3.jpg",
+    "../assets/Anh_cuoi/anh_cuoi_4.jpg",
+    "../assets/Anh_cuoi/anh_cuoi_5.jpg",
 ];
 
 function renderWeddingCalendar(dateISO) {
@@ -126,9 +126,9 @@ const flowerLayer = document.getElementById("flowerLayer");
 
 // Danh sách ảnh hoa
 const flowerImages = [
-  "assets/flowers/flower-1.png",
-  "assets/flowers/flower-2.png",
-  "assets/flowers/flower-3.png",
+  "../assets/flowers/flower-1.png",
+  "../assets/flowers/flower-2.png",
+  "../assets/flowers/flower-3.png",
 ];
 
 function createFlowers(amount = 100) {
